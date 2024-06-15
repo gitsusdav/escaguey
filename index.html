@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+  <nav class="bg-emerald-700">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      
+      <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="recursos/logo2.png" class="h-16" alt="Flowbite Logo" />
+        <span class="self-center text-4xl font-semibold whitespace-nowrap dark:text-white">Visita Escagüey</span>
+    </a>
+
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
+        <ul
+          class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-zinc-500 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+          <li>
+            <a href="index.html"
+              class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:text-gray-400  dark:text-white dark:border-gray-700">
+              Inicio</a>
+          </li>
+          <li>
+            <a href="lugares.html"
+            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:text-gray-400  dark:text-white dark:border-gray-700">
+              Lugares</a>
+          </li>
+          <li>
+            <a href="alojamientos.html"
+            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:text-gray-400  dark:text-white dark:border-gray-700">Alojamientos</a>
+          </li>
+          <li>
+            <a href="restaurantes.html"
+            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:text-gray-400  dark:text-white dark:border-gray-700">Restaurantes</a>
+          </li>
+          <li>
+            <a href="https://www.espanol.skyscanner.com/rutas/ccs/mid/caracas-a-merida.html" target="_blank"
+            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:text-gray-400  dark:text-white dark:border-gray-700">Vuela
+              a Merida</a>
+          </li>
+          <li>
+            <a href="index.html#quienesSomos"
+            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:text-gray-400  dark:text-white dark:border-gray-700">Quienes
+              Somos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="relative h-screen flex flex-col items-center justify-center text-center text-white ">
+    <div class="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
+        <video class="min-w-full min-h-full absolute object-cover"
+            src="recursos/hero-video.mp4"
+            type="video/mp4" autoplay muted loop></video>
+    </div>
+    <div class="video-content space-y-2 z-10">
+        <h1 class="text-7xl font-bold mb-4">Descubre <span class="text-7xl text-emerald-700 font-bold mb-4">Escagüey</span></h1>
+        <h3 class="text-xl font-semibold mb-4">Encuentra tu hogar lejos de casa en los acogedores alojamientos de Escagüey.</h3>
+        <ul>
+          <button class="bg-emerald-700 hover:bg-emerald-900 text-white font-bold p-2 m-4 rounded">Ver lugares cercanos</button>
+          <button class="bg-emerald-700 hover:bg-emerald-900 text-white font-bold p-2 m-4 rounded">Ver alojamientos</button>
+          <button class="bg-emerald-700 hover:bg-emerald-900 text-white font-bold p-2 m-4 rounded">Ver restaurantes</button>
+        </ul>
+    </div>
+</section>
+
+<style>
+    .video-docker video {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .video-docker::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 1;
+    }
+</style>
+
+  <section class="bg-white py-12" id="quienesSomos">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+      <div class="md:w-42 mb-8 md:mb-0">
+        <img src="recursos/aboutUs.jpeg" alt="About Us Image" class="rounded-lg shadow-lg">
+      </div>
+      <div class="md:w-1/2 md:pl-12">
+        <h2 class="text-3xl font-bold mb-4">Quienes Somos</h2>
+        <p class="text-gray-700 text-lg">
+          Descubre la esencia que nos define. Conoce nuestro equipo, nuestra pasión y nuestro compromiso contigo.
+          ¡Bienvenido a Escaguey!
+        </p>
+        <a href="https://linktr.ee/jesusddiaz" target="_blank"><button class="bg-emerald-700 hover:bg-emerald-900 text-white font-bold p-2 m-2 rounded">Contactanos</button></a>
+
+      </div>
+      
+    </div>
+  </section>
+
+
+  <!--Footer container-->
+  <footer class="flex flex-col items-center bg-zinc-50 text-center text-surface dark:bg-neutral-700 dark:text-white">
+
+
+    <!--Copyright section-->
+    <div class="w-full bg-emerald-700 p-4 text-center">
+      © 2024 Copyright:
+      <a href="https://tw-elements.com/">Visita Escagüey</a>
+    </div>
+  </footer>
+
+
+  <!-- Repeat this div for each image -->
+
+
+
+
+  <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+
+</body>
+
+</html>
