@@ -4,57 +4,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Alojamientos</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
 
 
-  <nav class="bg-emerald-700">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      
+  <header class="bg-emerald-700">
+    <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
       <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="recursos/logo2.png" class="h-16" alt="Flowbite Logo" />
         <span class="self-center text-4xl font-semibold whitespace-nowrap dark:text-white">Visita Escagüey</span>
     </a>
-
-      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
-        <ul
-          class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-zinc-500 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
-          <li>
-            <a href="index.html"
-              class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:text-gray-400  dark:text-white dark:border-gray-700">
-              Inicio</a>
-          </li>
-          <li>
-            <a href="lugares.html"
-            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:text-gray-400  dark:text-white dark:border-gray-700">
-              Lugares</a>
-          </li>
-          <li>
-            <a href="alojamientos.html"
-            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:text-gray-400  dark:text-white dark:border-gray-700">Alojamientos</a>
-          </li>
-          <li>
-            <a href="restaurantes.html"
-            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:text-gray-400  dark:text-white dark:border-gray-700">Restaurantes</a>
-          </li>
-          <li>
-            <a href="https://www.espanol.skyscanner.com/rutas/ccs/mid/caracas-a-merida.html" target="_blank"
-            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:text-gray-400  dark:text-white dark:border-gray-700">Vuela
-              a Merida</a>
-          </li>
-          <li>
-            <a href="index.html#quienesSomos"
-            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:text-gray-400  dark:text-white dark:border-gray-700">Quienes
-              Somos</a>
-          </li>
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="outline-none mobile-menu-button">
+          <svg class="w-6 h-6 text-white dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="hidden md:block">
+        <ul class="flex items-center space-x-8">
+          <li><a href="index.html" class="text-white font-sans hover:text-slate-300">Inicio</a></li>
+          <li><a href="lugares.html" class="text-white font-sans hover:text-slate-300">Lugares</a></li>
+          <li><a href="alojamientos.html" class="text-white font-sans hover:text-slate-300">Alojamientos</a></li>
+          <li><a href="restaurantes.html" class="text-white font-sans hover:text-slate-300">Restaurantes</a></li>
+          <li><a href="index.html#quienesSomos" class="text-white font-sans hover:text-slate-300">Quienes Somos</a></li>
+          <li><a href="https://www.espanol.skyscanner.com/rutas/ccs/mid/caracas-a-merida.html" target="_blank" class="text-white font-sans hover:text-slate-300">Vuela a Merida</a></li>
         </ul>
       </div>
+    </nav>
+    <div class="mobile-menu hidden md:hidden">
+      <ul class="mt-4 space-y-4">
+        <li><a href="index.html" class="text-white font-sans hover:text-slate-300">Inicio</a></li>
+        <li><a href="lugares.html" class="text-white font-sans hover:text-slate-300">Lugares</a></li>
+        <li><a href="alojamientos.html" class="text-white font-sans hover:text-slate-300">Alojamientos</a></li>
+        <li><a href="restaurantes.html" class="text-white font-sans hover:text-slate-300">Restaurantes</a></li>
+        <li><a href="index.html#quienesSomos" class="text-white font-sans hover:text-slate-300">Quienes Somos</a></li>
+        <li><a href="https://www.espanol.skyscanner.com/rutas/ccs/mid/caracas-a-merida.html" target="_blank" class="text-white font-sans hover:text-slate-300">Vuela a Merida</a></li>
+      </ul>
     </div>
-  </nav>
+  </header>
 
 <h1 class="text-center text-7xl p-4">
     Alojamientos
@@ -298,7 +292,7 @@
 
 
     <!--Copyright section-->
-    <div class="w-full bg-black/5 p-4 text-center">
+    <div class="w-full bg-emerald-700 p-4 text-center">
       © 2024 Copyright:
       <a href="https://tw-elements.com/">Visita Escagüey</a>
     </div>
